@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Ateliê da Letícia Luna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { rosa: '#F8C8DC', rosaEscuro: '#E899B8', rosaClaro: '#FFF5F8' },
+                    fontFamily: { script: ['"Dancing Script"', 'cursive'], sans: ['"Quicksand"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rosaClaro font-sans">
+
+<header class="bg-gradient-to-r from-rosa to-rosaEscuro shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <img id="logoTopo" src="" alt="Logo" class="h-16 object-contain rounded-lg">
+        <nav>
+            <ul class="flex space-x-6 text-white font-semibold">
+                <li><a href="index.html" class="underline">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="py-16 px-4">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+            <h2 class="text-4xl md:text-5xl font-bold text-rosaEscuro mb-4">Bonecas Artesanais de Pano que Encantam e Marcam Vidas</h2>
+            <p class="text-xl mb-6 leading-relaxed">Não é apenas uma boneca de pano. É um pedacinho de amor transformado em forma, criado para guardar memórias, aquecer corações e acompanhar momentos que nunca serão esquecidos.</p>
+            <a href="produtos.html" class="inline-block mt-6 bg-rosaEscuro hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full shadow-lg">Ver Produtos 🧸</a>
+        </div>
+        <div class="md:w-1/2">
+            <img id="fotoDestaque" src="" alt="Destaque" class="rounded-2xl shadow-xl max-w-full h-auto border-8 border-white">
+        </div>
+    </div>
+</section>
+
+<script>
+    const logoSalva = localStorage.getItem('logoSite');
+    if (logoSalva) document.getElementById('logoTopo').src = logoSalva;
+</script>
+</body>
+</html>

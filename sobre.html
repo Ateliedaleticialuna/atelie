@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Ateliê da Letícia Luna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { rosa: '#F8C8DC', rosaEscuro: '#E899B8', rosaClaro: '#FFF5F8' },
+                    fontFamily: { script: ['"Dancing Script"', 'cursive'], sans: ['"Quicksand"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rosaClaro font-sans">
+
+<header class="bg-gradient-to-r from-rosa to-rosaEscuro shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <img id="logoTopo" src="" alt="Logo" class="h-16 object-contain rounded-lg">
+        <nav>
+            <ul class="flex space-x-6 text-white font-semibold">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html" class="underline">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="py-16 px-4">
+    <div class="container mx-auto max-w-4xl text-center">
+        <h2 class="text-5xl font-bold mb-8 font-script text-rosaEscuro">Feito à mão com muito amor 🧵</h2>
+        <p class="text-xl leading-relaxed mb-6">No Ateliê da Letícia Luna, cada peça é feita uma a uma com todo cuidado e carinho. Utilizamos materiais de alta qualidade para garantir segurança e durabilidade.</p>
+        <p class="text-xl font-bold text-rosaEscuro">Cada peça é única e especial, assim como você! 💖</p>
+    </div>
+</section>
+
+<script>
+    const logoSalva = localStorage.getItem('logoSite');
+    if (logoSalva) document.getElementById('logoTopo').src = logoSalva;
+</script>
+</body>
+</html>
