@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê da Letícia Luna - Arte com Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosaClaro: '#FFE6F2',
+                        rosaChiclete: '#FF1493',
+                        rosaSuave: '#F8C8DC',
+                    },
+                    fontFamily: {
+                        cursiva: ['"Dancing Script"', 'cursive'],
+                        sans: ['"Poppins"', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-rosa {
+                background: linear-gradient(135deg, #FFE6F2 0%, #F8C8DC 100%);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#FFF9FB] font-sans text-gray-800 overflow-x-hidden">
+
+    <!-- Efeitos decorativos -->
+    <div class="fixed -top-10 -left-10 w-40 h-40 bg-rosaClaro rounded-full opacity-50 blur-3xl"></div>
+    <div class="fixed top-1/2 -right-20 w-60 h-60 bg-rosaSuave rounded-full opacity-40 blur-3xl"></div>
+    <div class="fixed -bottom-20 left-1/3 w-72 h-72 bg-rosaChiclete/20 rounded-full opacity-30 blur-3xl"></div>
+
+    <!-- Cabeçalho -->
+    <header class="w-full bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <!-- ✅ AGORA PROCURA DIRETO NA PASTA PRINCIPAL -->
+            <div class="mb-4">
+                <img src="logo.png" alt="Logo Ateliê da Letícia Luna" class="mx-auto h-20 md:h-28">
+            </div>
+
+            <!-- Menu -->
+            <nav class="flex justify-center flex-wrap gap-4 md:gap-8 text-lg font-medium">
+                <a href="produtos.html" class="px-3 py-2 rounded-full hover:bg-rosaClaro text-rosaChiclete">Bonecas</a>
+                <a href="produtos.html#luna-doce-encanto" class="px-3 py-2 rounded-full hover:bg-rosaClaro text-rosaChiclete">Luna Doce Encanto</a>
+                <a href="produtos.html#bebe-chupetinha" class="px-3 py-2 rounded-full hover:bg-rosaClaro text-rosaChiclete">Bebê Chupetinha</a>
+                <a href="produtos.html#bebe-naninha" class="px-3 py-2 rounded-full hover:bg-rosaClaro text-rosaChiclete">Bebê Naninha</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Principal -->
+        <section class="relative py-12 md:py-20 px-4 bg-gradient-rosa overflow-hidden">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+                    <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-cursiva text-rosaChiclete leading-tight">
+                        Feito à mão com amor <br> para momentos especiais
+                    </h2>
+                    <p class="text-lg text-gray-700 max-w-lg mx-auto md:mx-0">
+                        Peças únicas, cheias de carinho e detalhes que encantam crianças e adultos.
+                    </p>
+                    <a href="produtos.html" class="inline-block bg-rosaChiclete text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-pink-600 transition-all transform hover:scale-105">
+                        Conheça nossas Bonecas
+                    </a>
+                </div>
+                <!-- ✅ AGORA PROCURA DIRETO NA PASTA PRINCIPAL -->
+                <div class="w-full md:w-1/2 relative">
+                    <img src="boneca-principal.jpg" alt="Boneca Representante" class="rounded-2xl shadow-xl w-full max-w-md mx-auto">
+                    <i class="fa fa-heart absolute -top-4 -right-4 text-rosaChiclete text-4xl animate-bounce"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
