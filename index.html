@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê da Letícia Luna - Arte com Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosaClaro: '#FFE6F2',
+                        rosaChiclete: '#FF1493',
+                        rosaSuave: '#F8C8DC',
+                    },
+                    fontFamily: {
+                        cursiva: ['"Dancing Script"', 'cursive'],
+                        sans: ['"Poppins"', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-rosa {
+                background: linear-gradient(135deg, #FFE6F2 0%, #F8C8DC 100%);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#FFF9FB] font-sans text-gray-800 overflow-x-hidden">
+
+    <!-- Efeitos decorativos -->
+    <div class="fixed -top-10 -left-10 w-40 h-40 bg-rosaClaro rounded-full opacity-50 blur-3xl"></div>
+    <div class="fixed top-1/2 -right-20 w-60 h-60 bg-rosaSuave rounded-full opacity-40 blur-3xl"></div>
+    <div class="fixed -bottom-20 left-1/3 w-72 h-72 bg-rosaChiclete/20 rounded-full opacity-30 blur-3xl"></div>
+
+    <!-- Cabeçalho -->
+    <header class="w-full bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <!-- ESPAÇO DA LOGO PRONTO -->
+            <div class="mb-4">
+                <img src="imagens/logo.png" alt="Logo Ateliê da Letícia Luna" class="mx-auto h-20 md:h-28">
+            </div>
+
+            <!-- Menu -->
+            <nav class="flex justify-center flex-wrap gap-4 md:gap-8 text-lg font-medium">
+                <a href="#encanto-luna" class="px-3 py-2 rounded-full hover:bg-rosaClaro transition-all duration-300 text-rosaChiclete">Bonecas</a>
+                <a href="#luna-doce-encanto" class="px-3 py-2 rounded-full hover:bg-rosaClaro transition-all duration-300 text-rosaChiclete">Luna Doce Encanto</a>
+                <a href="#bebe-chupetinha" class="px-3 py-2 rounded-full hover:bg-rosaClaro transition-all duration-300 text-rosaChiclete">Bebê Chupetinha</a>
+                <a href="#bebe-naninha" class="px-3 py-2 rounded-full hover:bg-rosaClaro transition-all duration-300 text-rosaChiclete">Bebê Naninha</a>
+                <a href="#contato" class="px-3 py-2 rounded-full hover:bg-rosaClaro transition-all duration-300 text-rosaChiclete">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Principal -->
+        <section class="relative py-12 md:py-20 px-4 bg-gradient-rosa overflow-hidden">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+                    <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-cursiva text-rosaChiclete leading-tight">
+                        Feito à mão com amor <br> para momentos especiais
+                    </h2>
+                    <p class="text-lg text-gray-700 max-w-lg mx-auto md:mx-0">
+                        Peças únicas, cheias de carinho e detalhes que encantam crianças e adultos.
+                    </p>
+                    <a href="#encanto-luna" class="inline-block bg-rosaChiclete text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-pink-600 transition-all transform hover:scale-105">
+                        Conheça nossas Bonecas
+                    </a>
+                </div>
+                <!-- ESPAÇO BONECA PRINCIPAL PRONTO -->
+                <div class="w-full md:w-1/2 relative">
+                    <img src="imagens/boneca-principal.jpg" alt="Boneca Representante do Ateliê" class="rounded-2xl shadow-xl w-full max-w-md mx-auto">
+                    <i class="fa fa-heart absolute -top-4 -right-4 text-rosaChiclete text-4xl animate-bounce"></i>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO 1: COLEÇÃO ENCANTO LUNA -->
+        <section id="encanto-luna" class="py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-center font-cursiva text-5xl text-rosaChiclete mb-4">Coleção Encanto Luna</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Bonecas artesanais feitas com muito amor e detalhes especiais para encantar!</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden">
+                            <img src="imagens/encanto-violeta.jpg" alt="Encanto Luna Violeta" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold text-rosaChiclete">Encanto Luna Violeta</h3>
+                            <button onclick="abrirDetalhes('Encanto Luna Violeta', 'Boneca de Pano Artesanal – Coleção Encanto Luna\nAteliê Letícia Luna\nEncante-se com esta linda boneca de pano artesanal, feita à mão com muito carinho e atenção aos detalhes. Uma peça delicada que faz parte da exclusiva Coleção Encanto Luna, criada pelo Ateliê Letícia Luna.\nIdeal para presentear crianças ou decorar quartos infantis, trazendo charme e aconchego ao ambiente.\nCada boneca é produzida artesanalmente, tornando cada peça única e especial.\n\n🧸 Características\n✔ Boneca de pano artesanal\n✔ Produzida 100% à mão\n✔ Altura aproximada 40 cm\n✔ Ideal para decoração de quarto infantil\n✔ Peça exclusiva da Coleção Encanto Luna\n\n🎁 Perfeito para\n✨ Presente infantil\n✨ Decoração de quarto de bebê\n✨ Decoração de quarto infantil\n\n💗 Ateliê Letícia Luna\nBonecas artesanais feitas com amor para encantar a infância.')" class="mt-4 w-full bg-rosaClaro text-rosaChiclete font-semibold py-2 rounded-full hover:bg-rosaSuave transition-colors">
+                                Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden">
+                            <img src="imagens/encanto-rubi.jpg" alt="Encanto Luna Rubi" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold text-rosaChiclete">Encanto Luna Rubi</h3>
+                            <button onclick="abrirDetalhes('Encanto Luna Rubi', 'Boneca de Pano Artesanal – Coleção Encanto Luna\nAteliê Letícia Luna\nEncante-se com esta linda boneca de pano artesanal, feita à mão com muito carinho e atenção aos detalhes. Uma peça delicada que faz parte da exclusiva Coleção Encanto Luna, criada pelo Ateliê Letícia Luna.\nIdeal para presentear crianças ou decorar quartos infantis, trazendo charme e aconchego ao ambiente.\nCada boneca é produzida artesanalmente, tornando cada peça única e especial.\n\n🧸 Características\n✔ Boneca de pano artesanal\n✔ Produzida 100% à mão\n✔ Altura aproximada 40 cm\n✔ Ideal para decoração de quarto infantil\n✔ Peça exclusiva da Coleção Encanto Luna\n\n🎁 Perfeito para\n✨ Presente infantil\n✨ Decoração de quarto de bebê\n✨ Decoração de quarto infantil\n\n💗 Ateliê Letícia Luna\nBonecas artesanais feitas com amor para encantar a infância.')" class="mt-4 w-full bg-rosaClaro text-rosaChiclete font-semibold py-2 rounded-full hover:bg-rosaSuave transition-colors">
+                                Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden">
+                            <img src="imagens/encanto-aurora.jpg" alt="Encanto Luna Aurora" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold text-rosaChiclete">Encanto Luna Aurora</h3>
+                            <button onclick="abrirDetalhes('Encanto Luna Aurora', 'Boneca de Pano Artesanal – Coleção Encanto Luna\nAteliê Letícia Luna\nEncante-se com esta linda boneca de pano artesanal, feita à mão com muito carinho e atenção aos detalhes. Uma peça delicada que faz parte da exclusiva Coleção Encanto Luna, criada pelo Ateliê Letícia Luna.\nIdeal para presentear crianças ou decorar quartos infantis, trazendo charme e aconchego ao ambiente.\nCada boneca é produzida artesanalmente, tornando cada peça única e especial.\n\n🧸 Características\n✔ Boneca de pano artesanal\n✔ Produzida 100% à mão\n✔ Altura aproximada 40 cm\n✔ Ideal para decoração de quarto infantil\n✔ Peça exclusiva da Coleção Encanto Luna\n\n🎁 Perfeito para\n✨ Presente infantil\n✨ Decoração de quarto de bebê\n✨ Decoração de quarto infantil\n\n💗 Ateliê Letícia Luna\nBonecas artesanais feitas com amor para encantar a infância.')" class="mt-4 w-full bg-rosaClaro text-rosaChiclete font-semibold py-2 rounded-full hover:bg-rosaSuave transition-colors">
+                                Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden">
+                            <img src="imagens/encanto-camelia.jpg" alt="Encanto Luna Camelia" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold text-rosaChiclete">Encanto Luna Camelia</h3>
+                            <button onclick="abrirDetalhes('Encanto Luna Camelia', 'Boneca de Pano Artesanal – Coleção Encanto Luna\nAteliê Letícia Luna\nEncante-se com esta linda boneca de pano artesanal, feita à mão com muito carinho e atenção aos detalhes. Uma peça delicada que faz parte da exclusiva Coleção Encanto Luna, criada pelo Ateliê Letícia Luna.\nIdeal para presentear crianças ou decorar quartos infantis, trazendo charme e aconchego ao ambiente.\nCada boneca é produzida artesanalmente, tornando cada peça única e especial.\n\n🧸 Características\n✔ Boneca de pano artesanal\n✔ Produzida 100% à mão\n✔ Altura aproximada 40 cm\n✔ Ideal para decoração de quarto infantil\n✔ Peça exclusiva da Coleção Encanto Luna\n\n🎁 Perfeito para\n✨ Presente infantil\n✨ Decoração de quarto de bebê\n✨ Decoração de quarto infantil\n\n💗 Ateliê Letícia Luna\nBonecas artesanais feitas com amor para encantar a infância.')" class="mt-4 w-full bg-rosaClaro text-rosaChiclete font-semibold py-2 rounded-full hover:bg-rosaSuave transition-colors">
+                                Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden">
+                            <img src="imagens/encanto-rosa.jpg" alt="Encanto Luna Rosa" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold text-rosaChiclete">Encanto Luna Rosa</h3>
+                            <button onclick="abrirDetalhes('Encanto Luna Rosa', 'Boneca de Pano Artesanal – Coleção Encanto Luna\nAteliê Letícia Luna\nEncante-se com esta linda boneca de pano artesanal, feita à mão com muito carinho e atenção aos detalhes. Uma peça delicada que faz parte da exclusiva Coleção Encanto Luna, criada pelo Ateliê Letícia Luna.\nIdeal para presentear crianças ou decorar quartos infantis, trazendo charme e aconchego ao ambiente.\nCada boneca é produzida artesanalmente, tornando cada peça única e especial.\n\n🧸 Características\n✔ Boneca de pano artesanal\n✔ Produzida 100% à mão\n✔ Altura aproximada 40 cm\n✔ Ideal para decoração de quarto infantil\n✔ Peça exclusiva da Coleção
+    <!-- JANELA DE DETALHES -->
+    <div id="modalDetalhes" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-2xl p-6 max-w-lg w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="text-right">
+                <button onclick="fecharDetalhes()" class="text-gray-500 hover:text-rosaChiclete text-2xl">&times;</button>
+            </div>
+            <h3 id="modalTitulo" class="text-2xl font-cursiva text-rosaChiclete mb-4"></h3>
+            <p id="modalTexto" class="text-gray-700 whitespace-pre-line leading-relaxed mb-6"></p>
+            <a id="linkWhatsapp" href="#" target="_blank" class="block w-full bg-green-500 text-white text-center py-3 rounded-full font-semibold hover:bg-green-600 transition-colors">
+                <i class="fa fa-whatsapp mr-2"></i> Comprar pelo WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function abrirDetalhes(nome, texto) {
+            document.getElementById('modalTitulo').innerText = nome;
+            document.getElementById('modalTexto').innerText = texto;
+            const numero = "5522992297713";
+            const mensagem = `Olá! Gostaria de saber mais sobre o produto: ${nome}`;
+            document.getElementById('linkWhatsapp').href = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+            document.getElementById('modalDetalhes').classList.remove('hidden');
+        }
+        function fecharDetalhes() {
+            document.getElementById('modalDetalhes').classList.add('hidden');
+        }
+    </script>
+
+</body>
+  </html>
